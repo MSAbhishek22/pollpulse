@@ -12,9 +12,9 @@ export const Route = createFileRoute('/poll/$pollId')({
   component: PollPage,
 })
 
-/** Convex ids are lowercase alphanumeric, ~17–24 chars. Anything else is a bad link. */
+/** Convex ids are lowercase alphanumeric — 32 chars in this deployment (verified live 12 Nov 2026). Anything else is a bad link. */
 function isPollId(value: string): boolean {
-  return /^[a-z0-9]{16,24}$/.test(value)
+  return /^[a-z0-9]{16,40}$/.test(value)
 }
 
 function PollPage() {
