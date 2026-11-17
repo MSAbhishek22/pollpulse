@@ -5,6 +5,10 @@ A fresh real-time polling app built for the **TanStack Start Hackathon**
 results update live in every open browser the moment someone votes — no
 login, no refresh.
 
+**Live demo:** https://pollpulse-app.netlify.app — create a poll, share the link, and watch votes land live. No login needed.
+
+> **Update (17 Nov 2026):** PollPulse is live at the demo link above and was submitted to the TanStack Start Hackathon. The dated status note below is the original 12 Nov snapshot, kept for the record.
+
 **Status (12 Nov 2026 ~09:55 IST, Linux sandbox): IN_PROGRESS — app code
 complete, tests green, production build green, SSR smoke-tested with the
 real Convex URL wired. Still open: Convex CLI login (blocks function deploy
