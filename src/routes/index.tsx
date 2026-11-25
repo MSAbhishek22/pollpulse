@@ -3,6 +3,7 @@ import { useQuery } from 'convex/react'
 import { api } from '../../convex/_generated/api'
 import { useConvexReady } from '../components/convex-provider'
 import { CreatePollForm } from '../components/CreatePollForm'
+import { ThreeHero } from '../components/ThreeHero'
 import { LiveBadge, PollCard, SetupNotice } from '../components/poll-ui'
 import { formatVotes } from '../lib/results'
 
@@ -44,6 +45,7 @@ function HeroHeader({
         and watch results update in every open browser the moment someone
         votes — no login, no refresh.
       </p>
+      <ThreeHero />
       {typeof totalPolls === 'number' && (
         <p className="mt-4 text-sm font-semibold text-white/60">
           {totalPolls} {totalPolls === 1 ? 'poll' : 'polls'} live ·{' '}
